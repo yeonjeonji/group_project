@@ -24,7 +24,7 @@ function App() {
     <div className="App">
       
       <div className="black-nav">yeonjji's blog</div>
-      
+      <h1>push용 코드 추가 </h1>
       <h4>{logo}</h4>
       <Profile/>
       
