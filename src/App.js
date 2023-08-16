@@ -1,23 +1,33 @@
+/* eslint-disable */
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Gallery from './Gallery';
+
+function Profile() {
+  return (
+    <img
+      src="https://i.imgur.com/MK3eW3As.jpg"
+      alt="Katherine Johnson"
+    />
+  );
+}
+
+
 
 function App() {
+
+  let post = 'daily'
+  let [logo, logoset] = useState('일상');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <div className="black-nav">yeonjji's blog</div>
+      
+      <h4>{logo}</h4>
+      <Profile/>
+      
     </div>
   );
 }
